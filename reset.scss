@@ -1,3 +1,5 @@
+$globalColor: crimson;
+
 *{
   margin: 0;
   padding: 0;
@@ -15,3 +17,23 @@ ul,li{
   list-style: none;
 }
 
+@mixin globalBtn{
+  color: #fff;
+  background: $globalColor;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 2px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  display: inline-block;
+  border: none;
+
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
+}
